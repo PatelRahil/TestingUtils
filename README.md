@@ -1,6 +1,6 @@
 ## Testing Utils
 
-A small plugin to help developers test things out in-game. Currently adds 10 chat commands:
+A small [Core Keeper](https://store.steampowered.com/app/1621690/Core_Keeper/) plugin to help mod developers test things out in-game. Currently adds 10 chat commands:
 
 `/help`:
 
@@ -32,7 +32,6 @@ A small plugin to help developers test things out in-game. Currently adds 10 cha
 `/invincibility`:
 
 	Toggles the player's invincibility.
-
 ## Installation
 
 This mod requires BepInEx6 to be installed, and should be installed in BepInEx's plugin folder. 
