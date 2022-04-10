@@ -2,25 +2,35 @@
 
 A small plugin to help developers test things out in-game. Currently adds 10 chat commands:
 
-`/help`:
+-`/help`:
+
 	Use this to get a list of all commands in-game or to get more info on a command with `/help {command}`
-`/give`:
+-`/give`:
+
 	Give yourself any item. Use `/give name:{itemName} {count}` or `/give id:{itemId} {count}`. The count parameter defaults to 1.
-`/clearInv`:
+-`/clearInv`:
+
 	Clears the player's inventory.
-`/heal`:
+-`/heal`:
+
 	Use `/heal` to fully heal player. `/heal {amount}` for a specific amount.
-`/feed`:
+-`/feed`:
+
 	Use `/feed` to fully feed player. `/feed {amount}` for a specific amount.
-`/maxSkills`:
+-`/maxSkills`:
+
 	Maxes out all skills.
-`/resetSkills`:
+-`/resetSkills`:
+
 	Resets all skills to 0.
-`/setSkill`:
+-`/setSkill`:
+
 	Use `/setSkill {skillName} {level}` to set the given skill to the given level (0-100).
-`/kill`:
+-`/kill`:
+
 	Kills the player.
-`/invincibility`:
+-`/invincibility`:
+
 	Toggles the player's invincibility.
 
 ## Installation
