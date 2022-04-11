@@ -2,6 +2,7 @@
 using System.Linq;
 using HarmonyLib;
 using TestingUtils.Chat.Commands;
+using UnityEngine;
 
 namespace TestingUtils.Chat
 {
@@ -12,7 +13,7 @@ namespace TestingUtils.Chat
 
         [HarmonyPatch(typeof(ChatWindow), nameof(ChatWindow.AddPugText))]
         [HarmonyPrefix]
-        static bool ReadPugText(ChatWindow.MessageTextType type, ref PugText text)
+        static bool ReadPugText(ref ChatWindow.MessageTextType type, ref PugText text)
         {
             TestingUtilsPlugin.logSource.LogInfo("Input text: " + text.textString);
             var textStr = text.textString;
@@ -26,6 +27,12 @@ namespace TestingUtils.Chat
                 var parameters = args.Skip(1).ToArray();
                 feedback = commandHandler.Execute(parameters);
                 text.textString = textStr + feedback;
+                /*
+                text.color = Color.green;
+                text.style.color = Color.green;
+                text.tmpColor = Color.green;
+                */
+                text.defaultStyle.color = Color.green;
                 text.Render();
                 return true;
             }
