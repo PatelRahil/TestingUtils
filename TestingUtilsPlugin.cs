@@ -2,9 +2,6 @@
 using BepInEx.IL2CPP;
 using BepInEx.Logging;
 using HarmonyLib;
-using CoreLib;
-using System.Collections;
-using UnityEngine;
 
 namespace TestingUtils
 {
